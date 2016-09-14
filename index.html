@@ -1,0 +1,234 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Primera Aplicacion</title>
+ 
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/tema1.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js" type="text/javascript"></script>
+ </head>
+   <body>
+ 
+  <div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+ <h1>ANIME </h1>
+ <p>
+ <!-- Start WOWSlider.com -->
+<iframe src="visor/index.html" style="width:460px;height:180px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</p>
+  </div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>FORMULARIO</h2>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+ <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>anime TOKIO GHOUL</h2>
+  </a>
+  </li>
+  </ul>
+
+  </div>
+  <div data-role="footer" align="center" data-theme="b">
+  <div>
+  <img src="imagenes/tokio.png" width="46" height="46">
+  </div>
+  <div>
+  <h4>Aplicacion Formulario</h4>
+  <h4>Jesus Vazquez Dominguez</h4>
+  </div></div>
+  
+  
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>FORMULARIO</h1>
+ 
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <form name="form2" method="post" action="">
+    <table width="200">
+      <tr>
+        <td><label>
+          <input type="radio" name="visitante" value="opción" id="visitante_0">
+          nacional</label></td>
+      </tr>
+      <tr>
+        <td><label>
+          <input type="radio" name="visitante" value="opción" id="visitante_1">
+          extranjero</label></td>
+      </tr>
+    </table>
+  </form>
+<p>
+<form id="form1" method="post">
+ <table width="357" border="0"> 
+ <tr> <td width="90">que es anime?</td>
+  <td width="257">
+  <input name="anime" type="text" id="anime" size=30 />
+  </td> 
+  </tr>
+  <tr>
+       <td>te consederas OTAKU</td>
+        <td>
+        <label>
+<input name="consi" type="text" id="consi" size=30 />
+       </label>
+     </td>
+      </tr>
+      <tr>
+       <td>si?porque?....no?porque?</td>
+        <td>
+        <label>
+<input name="peronaje" type="text" id="personaje" size=30 />
+       </label>
+     </td>
+      </tr>
+  <tr> 
+  <td>meciona un anime?</td> <td><label>
+   <input name="menciona" type="text" id="meciona" size=30 /> </label>
+   </td>
+    </tr> 
+    <tr> 
+    <td>opening?</td>
+     <td>
+    <label>
+     <input name="opening" type="text" id="opening" size=30 /> 
+     </label>
+     </td>
+     </tr>
+      <tr>
+       <td>personaje/P?</td>
+        <td>
+        <label>
+<input name="peronaje" type="text" id="personaje" size=30 />
+       </label>
+     </td>
+      </tr>
+      <tr>
+       <td>trama del anime?</td>
+        <td>
+        <label>
+<input name="trama" type="text" id="trama" size=30 />
+       </label>
+     </td>
+      </tr>
+      <tr>
+       <td>quien te recomendo ver lo?</td>
+        <td>
+        <label>
+<input name="peronaje" type="text" id="personaje" size=30 />
+       </label>
+     </td>
+      </tr>
+       <tr> 
+       <td>tipo de anime?</td>
+      <td><input name="tipo" type="text" id="tipo" size=30 />
+     </td>
+      </tr>
+      <tr>
+       <td>otros tipos de animacion vista?</td>
+        <td>
+        <label>
+<input name="reco" type="text" id="reco" size=30 />
+       </label>
+     </td>
+      </tr> 
+      <tr>
+       <td height="59" colspan="2"><div align="center">recomendacion personal </div>
+       </td>
+        </tr>
+        
+        <tr> 
+         <td height="91" colspan="2">
+  <textarea name="recomendacion" cols="55" rows="5" id="recomendacion"></textarea>
+  </td>
+   </tr>
+    <tr>
+     <td height="41" colspan="2">
+  <label>
+  </label>
+  <table width="200" height="62">
+    <tr>
+      <td><label>
+        <table width="200">
+          <tr>
+            <td><label>
+              <input type="radio" name="RadioGroup1" value="opción" id="RadioGroup1_0">
+              HOMBRE</label></td>
+          </tr>
+          <tr>
+            <td><label>
+              <input type="radio" name="RadioGroup1" value="opción" id="RadioGroup1_1">
+              MUJER</label></td>
+          </tr>
+          <tr>
+            <td><label>
+              <input type="radio" name="RadioGroup1" value="opción" id="RadioGroup1_2">
+              INDEFINIDO</label></td>
+          </tr>
+          <tr>
+            <td><label>
+              <input type="radio" name="RadioGroup1" value="opción" id="RadioGroup1_3">
+              EN ESPERA</label></td>
+          </tr>
+        </table>
+        
+        
+<div align="center">
+  <input type="reset" name="Submit" value="Enviar" /> 
+   <label> <input type="reset" name="Submit2" value="Cancelar" />
+    </label>
+ </div>
+     </td>
+      </tr> 
+      </table>
+       </form>
+       </p>
+  </div>
+  </div>
+  <div>
+  <div data-role="footer" align="center" data-theme="a">
+  <img src="imagenes/tokio.png" width="46" height="46">
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>FORMULARIO</h4>
+  </div>
+  </div>
+  </div>
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>TOKIO GHOUL</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <p>okyo Ghoul (東京喰種:トーキョーグール Tōkyō Gūru?) es una serie de manga escrita e ilustrada por Sui Ishida, serializada en Seinen, revista de "Shueisha Young Jump", con entrega semanal desde septiembre del 2011. Compilado en 14 volúmenes (tankōbon) a partir de junio del 2014. Una adaptación al anime del Studio Pierrot comenzó a emitirse en Tokyo MX, el 5 de julio de 2014. Funimation ha licenciado la serie de anime para el streaming de vídeo y el hogar con distribución en América.
+
+El 10 de octubre de 2014 se anunció de manera oficial que Tokyo Ghoul tendría una segunda temporada para enero de 2015.1 Después de que el sitio Web oficial japonés lo anunciara y eliminara a las pocas horas.2 Su nombre fue "Tokyo Ghoul √A", y se anunció antes que empezará la segunda temporada, que tendría una trama distinta a la del manga.</p></div>
+ </div>
+ <div>
+ <center>
+  <img src="imagenes/tokio.jpg" width="50%" height="50%"> </center></div>
+  <div data-role="footer" align="center" data-theme="a">
+  <div>
+  <img src="imagenes/tokio.png" width="46" height="46">
+  </div>
+ <div data-role="footer" data-theme="a">
+ <h4>TOKIO GHOUL</h4>
+ </div>
+ </div>
+ </div>
+ 
+ 
+  
+	</body>
+	</html>
